@@ -55,7 +55,7 @@ for (let i = 0; i < workingHours.length; i++) {
 }
 let totalLiElement = document.createElement('li');
 ulElement.appendChild(totalLiElement);
-totalLiElement.textContent = ("Total:"+ seattle.total);
+totalLiElement.textContent = ("Total:" + seattle.total);
 
 // -----------tokyo-----------
 let tokyo = {
@@ -105,13 +105,13 @@ console.log(h3Element1);
 let ulElement1 = document.createElement('ul');
 parent1.appendChild(ulElement1);
 for (let i = 0; i < workingHours.length; i++) {
-    let liElement1= document.createElement('li');
+    let liElement1 = document.createElement('li');
     ulElement1.appendChild(liElement1);
     liElement1.textContent = (`${workingHours[i]}:${tokyo.avgAmountPerHour[i]}`);
 }
 let totalLiElement1 = document.createElement('li');
 ulElement1.appendChild(totalLiElement1);
-totalLiElement1.textContent = ("Total:"+ tokyo.total);
+totalLiElement1.textContent = ("Total:" + tokyo.total);
 
 //------- Dubai--------
 let dubai = {
@@ -167,7 +167,7 @@ for (let i = 0; i < workingHours.length; i++) {
 }
 let totalLiElement2 = document.createElement('li');
 ulElement2.appendChild(totalLiElement2);
-totalLiElement2.textContent = ("Total:"+ dubai.total);
+totalLiElement2.textContent = ("Total:" + dubai.total);
 
 //------- Paris--------
 let paris = {
@@ -212,7 +212,7 @@ let h3Element3 = document.createElement('h3');
 console.log(h3Element3);
 parent3.appendChild(h3Element3);
 
-h3Element3.textContent =paris.name;
+h3Element3.textContent = paris.name;
 console.log(h3Element3);
 let ulElement3 = document.createElement('ul');
 parent3.appendChild(ulElement3);
@@ -223,7 +223,7 @@ for (let i = 0; i < workingHours.length; i++) {
 }
 let totalLiElement3 = document.createElement('li');
 ulElement3.appendChild(totalLiElement3);
-totalLiElement3.textContent = ("Total:"+ paris.total);
+totalLiElement3.textContent = ("Total:" + paris.total);
 
 //------- Lima--------
 let lima = {
@@ -268,7 +268,7 @@ let h3Element4 = document.createElement('h3');
 console.log(h3Element4);
 parent3.appendChild(h3Element4);
 
-h3Element4.textContent =lima.name;
+h3Element4.textContent = lima.name;
 console.log(h3Element4);
 let ulElement4 = document.createElement('ul');
 parent4.appendChild(ulElement4);
@@ -279,11 +279,4 @@ for (let i = 0; i < workingHours.length; i++) {
 }
 let totalLiElement4 = document.createElement('li');
 ulElement4.appendChild(totalLiElement4);
-totalLiElement4.textContent = ("Total:"+ lima.total);
-
-let image =document.createElement('img');
-articleElement.appendChild(image);
-
-// image.setAttribute('src','images/'+img/salmon'.png');
-
-// image.setAttribute('width','500px');
+totalLiElement4.textContent = ("Total:" + lima.total);
