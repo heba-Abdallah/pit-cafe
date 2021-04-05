@@ -1,0 +1,8 @@
+  
+* {
+    font-family: 'Lobster', cursive;
+}  
+  table,th,td {
+    border: solid black 1px;
+    border-collapse: collapse;
+  }
