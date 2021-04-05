@@ -8,3 +8,9 @@
 <ul>
 <li>How did this go, overall? it has been some difficult in some part </li>
 <li>How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? it toke me 4 houres</li>
+
+### Monday 5/4/2021 Lab 7
+**I did the table for the pet cafe**
+<ul>
+<li>How did this go, overall? well i guess</li>
+<li>How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? 5 houres</li>
