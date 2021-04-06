@@ -2,13 +2,8 @@
 * {
     font-family: 'Lobster', cursive;
 }  
-table,th,td {
-  border: solid rgb(83, 155, 197) 5px;
-  border-collapse: collapse;
-}
-
 body{
-  background-color: #98ddca;
+  background-color:#a4ebf3;
 }
 
 header{
@@ -17,7 +12,7 @@ header{
   color: #e2bcb7;
 }
 
-main h2{
+header h1{
   font-size: 20px;
     text-align: center;
     vertical-align: middle;
@@ -28,23 +23,33 @@ main h2{
 main{
   text-align: center;
 }
+main h3{
+    color: #0a043c;
+}
 #parent{
     font-size: 30px;
     color: #e9896a;
     text-align: center;
-    padding-left: 250px;
+    display: inline-block;
+}
+div .image{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    height: 450px;
+    width: 45%;
 }
 main a{
-  color: rgb(82, 56, 69);
-  text-decoration: none;
-  font-weight: 700;
+    color: rgb(82, 56, 69);
+    text-decoration: none;
+    font-weight: 700;
 }
 a:hover {
-  color: rgb(151, 60, 102);
-}
+    color: rgb(151, 60, 102);
+  }
 footer{
   height: 90px;
-  color: #e2bcb7;
+  color: #810000;
   background-color: #dbf6e9;
 }
 footer p{
