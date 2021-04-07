@@ -16,13 +16,14 @@ Cafe.prototype.getrandomNumbOfCust = function () {
     for (let i = 0; i < workingHours.length; i++) {
 
         this.randomNumbOfCust.push(Math.floor(Math.random() * (this.maxCustomers - this.minCustomers)) + this.minCustomers);
-        console.log(this.randomNumbOfCust[i]);
+        // console.log(this.randomNumbOfCust[i]);
+        // console.log("hello");
     }
 }
 Cafe.prototype.getavgAmountPerHour = function () {
     for (let i = 0; i < workingHours.length; i++) {
         this.avgAmountPerHour.push(Math.floor(this.randomNumbOfCust[i] * this.avgCustomers));
-        console.log(this.avgAmountPerHour[i]);
+        // console.log(this.avgAmountPerHour[i]);
         this.total = this.total + this.avgAmountPerHour[i];
 
     }
@@ -44,9 +45,9 @@ const lima = new Cafe('Lima', 2, 16, 4.6);
 // lima.getavgAmountPerHour();
 
 let parent = document.getElementById('parent');
-console.log(parent);
+// console.log(parent);
 let table = document.createElement('table');
-console.log(table);
+// console.log(table);
 parent.appendChild(table);
 
 function makingHeader() {
@@ -72,7 +73,7 @@ function makingHeader() {
 Cafe.prototype.render = function () {
     let dataRow = document.createElement('tr');
     table.appendChild(dataRow);
-    console.log("hi", dataRow);
+    // console.log("hi", dataRow);
     let colTable = document.createElement('td');
     dataRow.appendChild(colTable);
     colTable.textContent = `${this.name}`;
@@ -81,8 +82,9 @@ Cafe.prototype.render = function () {
         let tdElement = document.createElement('td');
         dataRow.appendChild(tdElement);
         tdElement.textContent = this.avgAmountPerHour[i];
-        console.log("hello", tdElement);
+        // console.log("hello", tdElement);
     }
+
     let dailyTd = document.createElement('td');
     dataRow.appendChild(dailyTd);
     dailyTd.textContent = this.total;
@@ -111,6 +113,39 @@ function makingFooter() {
     footerRow.appendChild(totaOfTotalTd);
     totaOfTotalTd.textContent = all;
 }
+
+let salesInput = document.getElementById('salesInput');
+
+salesInput.addEventListener('submit', submitter);
+function submitter(event) {
+    event.preventDefault();
+    // console.log(event);
+    let name = event.target.nameInput.value;
+    // console.log(name);
+    let minCustomers = parseInt(event.target.minInput.value);
+    // console.log('min', minCustomers);
+    let maxCustomers = parseInt(event.target.maxInput.value);
+    // console.log('max', maxCustomers);
+    let avgCustomers = parseInt(event.target.avgInput.value);
+    // console.log('avg', avgCustomers);
+    let addedCafe = new Cafe(name, minCustomers, maxCustomers, avgCustomers);
+
+    // addedCafe.getrandomNumbOfCust();
+    // addedCafe.getavgAmountPerHour();
+    // addedCafe.render();
+
+    table.textContent = ''
+    makingHeader();;
+
+    for (let i = 0; i < cafesArr.length; i++) {
+        cafesArr[i].getrandomNumbOfCust();
+        cafesArr[i].getavgAmountPerHour();
+        cafesArr[i].render();
+    }
+    makingFooter();
+
+}
+
 makingHeader();
 for (let i = 0; i < cafesArr.length; i++) {
     cafesArr[i].getrandomNumbOfCust();
@@ -119,4 +154,4 @@ for (let i = 0; i < cafesArr.length; i++) {
 }
 makingFooter();
 
-console.log(cafesArr);
+// console.log(cafesArr);
