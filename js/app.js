@@ -2,7 +2,7 @@
 let workingHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm']
 let cafesArr = [];
 
-function cafe(name, min, max, avg) {
+function Cafe(name, min, max, avg) {
     this.name = name;
     this.minCustomers = min;
     this.maxCustomers = max;
@@ -12,14 +12,14 @@ function cafe(name, min, max, avg) {
     this.total = 0
     cafesArr.push(this);
 }
-cafe.prototype.getrandomNumbOfCust = function () {
+Cafe.prototype.getrandomNumbOfCust = function () {
     for (let i = 0; i < workingHours.length; i++) {
 
         this.randomNumbOfCust.push(Math.floor(Math.random() * (this.maxCustomers - this.minCustomers)) + this.minCustomers);
         console.log(this.randomNumbOfCust[i]);
     }
 }
-cafe.prototype.getavgAmountPerHour = function () {
+Cafe.prototype.getavgAmountPerHour = function () {
     for (let i = 0; i < workingHours.length; i++) {
         this.avgAmountPerHour.push(Math.floor(this.randomNumbOfCust[i] * this.avgCustomers));
         console.log(this.avgAmountPerHour[i]);
@@ -27,19 +27,19 @@ cafe.prototype.getavgAmountPerHour = function () {
 
     }
 }
-const seattle = new cafe('Seattle', 23, 65, 6.3);
+const seattle = new Cafe('Seattle', 23, 65, 6.3);
 // seattle.getrandomNumbOfCust();
 // seattle.getavgAmountPerHour();
-const tokyo = new cafe('Tokyo', 3, 24, 1.2);
+const tokyo = new Cafe('Tokyo', 3, 24, 1.2);
 // tokyo.getrandomNumbOfCust();
 // tokyo.getavgAmountPerHour();
-const dubai = new cafe('Dubai', 11, 38, 3.7);
+const dubai = new Cafe('Dubai', 11, 38, 3.7);
 // dubai.getrandomNumbOfCust();
 // dubai.getavgAmountPerHour();
-const paris = new cafe('Paris', 20, 38, 2.3);
+const paris = new Cafe('Paris', 20, 38, 2.3);
 // paris.getrandomNumbOfCust();
 // paris.getavgAmountPerHour();
-const lima = new cafe('Lima', 2, 16, 4.6);
+const lima = new Cafe('Lima', 2, 16, 4.6);
 // lima.getrandomNumbOfCust();
 // lima.getavgAmountPerHour();
 
@@ -69,7 +69,7 @@ function makingHeader() {
 
 }
 
-cafe.prototype.render = function () {
+Cafe.prototype.render = function () {
     let dataRow = document.createElement('tr');
     table.appendChild(dataRow);
     console.log("hi", dataRow);
