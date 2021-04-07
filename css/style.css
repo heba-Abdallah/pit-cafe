@@ -28,6 +28,14 @@ main h2{
 main{
   text-align: center;
 }
+fieldset {
+  border: salmon 10px double;
+  border-radius:10px ;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+}
+
 #parent{
     font-size: 30px;
     color: #e9896a;
