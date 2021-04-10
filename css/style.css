@@ -2,11 +2,28 @@
 * {
     font-family: 'Lobster', cursive;
 }  
+
 table,th,td {
   border: solid rgb(83, 155, 197) 5px;
   border-collapse: collapse;
+  width: 75%;
 }
-
+table {
+  border-spacing: 0.5rem;
+  width: 75%;
+  border-spacing: 0.5rem;
+}
+th {
+  background-color: #d8ac9c;
+  color: white;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+td{
+  padding: 0.5rem;
+  background: #eeebdd;
+}
 body{
   background-color: #98ddca;
 }
@@ -17,6 +34,9 @@ header{
   color: #e2bcb7;
 }
 
+main{
+  text-align: center;
+}
 main h2{
   font-size: 20px;
     text-align: center;
@@ -25,9 +45,6 @@ main h2{
     font-weight: 700;
     color: #810000;
 }
-main{
-  text-align: center;
-}
 fieldset {
   border: salmon 10px double;
   border-radius:10px ;
@@ -35,7 +52,37 @@ fieldset {
   justify-content: center;
   margin: auto;
 }
+#nameInput {
+  border: 5px solid #e9896a;
+  border-radius: 4px;
+  background-color: #edffec;
+}
 
+input[type=number] {
+  border: 5px solid #e9896a;
+  border-radius: 4px;
+  background-color: #edffec;
+}
+input[type=number]:focus {
+  background-color: #ffd5cd;
+}
+input[type=decimals] {
+  border: 5px solid #e9896a;
+  border-radius: 4px;
+  background-color: #edffec;
+}
+input[type=decimals]:focus {
+  background-color: #ffd5cd;
+}
+input[type=submit] {
+  border: 5px dotted #e9896a;
+  border-radius: 4px;
+  background-color: #edffec;
+}
+input[type=submit] :active{
+  border: 5px solid white;
+  border-radius: 4px;
+}
 #parent{
     font-size: 30px;
     color: #e9896a;
@@ -46,6 +93,12 @@ main a{
   color: rgb(82, 56, 69);
   text-decoration: none;
   font-weight: 700;
+}
+main img {animation-timing-function: linear;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
 }
 a:hover {
   color: rgb(151, 60, 102);

@@ -30,3 +30,9 @@
 <ul>
 <li>How did this go, overall? very good actually </li>
 <li>How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? like 2 hours</li>
+
+### Saturday 10/4/2021 Lab 10b
+**I Finish the salmon cookie stand project**
+<ul>
+<li>How did this go, overall? very good actually </li>
+<li>How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? like 2 hours</li>
